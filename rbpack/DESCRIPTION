@@ -1,6 +1,6 @@
 Package: rbpack
 Title: Converts pounds to kilograms
-Version: 1.0.0.
+Version: 0.1.0
 Authors@R: 
     person("Raveen", "Badyal", , "rbadyal99@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))

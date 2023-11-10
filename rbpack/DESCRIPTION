@@ -4,10 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Raveen", "Badyal", , "rbadyal99@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: This package contains a function that converts pounds to kilograms.
-The input of this function may be limited as the output will display only two 
-decimal places.
-Depends: R (>= 3.2.4)
+Description: This package contains a function that converts pounds to kilograms. The input of this function may be limited as the output will display only two decimal places.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

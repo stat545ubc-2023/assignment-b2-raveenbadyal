@@ -1,20 +1,36 @@
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # Assignment 2 - rbpack
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 The goal of Assignment 2 - rbpack is to create a package of functions.
+The rbpack was created for this assignment.The goal of rbpack is to be
+able to convert pounds to kilograms to two decimal places.
 
-The rbpack was created by Raveen Badyal for STAT545B Assignment 2. It is
-a package that includes an lb_to_kg function. To use this function, you
-will have to install the package. The package can be installed using
-install_github(“stat545ubc-2023/rbpack”). The package can then be loaded
-using the library() function.
+## Installation
+
+You can install the development version of rbpack from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2023/rbpack")
+```
+
+## Examples
+
+This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(rbpack)
+lb_to_kg(10)
+#> [1] 4.54
 ```
+
+More exmaples can be found below:
 
 The lb_to_kg function can be used to convert pounds to kilograms to 2
 decimal places. A numeric input is required for the lb_to_kg function.
@@ -33,5 +49,3 @@ lb_to_kg(10)
 lb_to_kg("hi")
 #> [1] "This function only works for numeric input."
 ```
-
-\`\`\`

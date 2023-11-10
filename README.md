@@ -8,8 +8,9 @@ The goal of Assignment 2 - rbpack is to create a package of functions.
 
 The rbpack was created by Raveen Badyal for STAT545B Assignment 2. It is
 a package that includes an lb_to_kg function. To use this function, you
-can install and load the package using the install.packages() and
-library() functions.
+will have to install the package. The package can be installed using
+install_github(“stat545ubc-2023/rbpack”). The package can then be loaded
+using the library() function.
 
 ``` r
 library(rbpack)

@@ -10,8 +10,9 @@ package contains a function which converts pounds into kilograms.
 
 # Contents
 
-- The README.md file (this file) gives an overview of the repository for
-  Assignment B1.
+- The README.Rmd file (this file) gives an overview of the repository
+  for Assignment B1.
+- The README.md file is the knitted format of the Rmd file.
 - The rbpack folder contains all files necessary for installing and
   reviewing the rbpack package.
 - The rbpack folder contains the following files that were generated

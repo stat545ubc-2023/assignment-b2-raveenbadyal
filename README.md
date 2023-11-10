@@ -1,6 +1,4 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # Assignment 2 - rbpack
 
 <!-- badges: start -->
@@ -8,26 +6,31 @@
 
 The goal of Assignment 2 - rbpack is to create a package of functions.
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+The rbpack was created by Raveen Badyal for STAT545B Assignment 2. It is
+a package that includes an lb_to_kg function. To use this function, you
+can install and load the package using the install.packages() and
+library() functions.
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+library(rbpack)
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
+The lb_to_kg function can be used to convert pounds to kilograms to 2
+decimal places. A numeric input is required for the lb_to_kg function.
+Numbers less than 0.02 can not be inputted into this function as the
+outut is limited to two decimal places. A different function must be
+used for that purpose, or divide by 2.20462. There are some examples
+below. Error messages will be outputted if an invalid input is made.
 
-You can also embed plots, for example:
+``` r
+lb_to_kg(0.02)
+#> [1] 0.01
+lb_to_kg(0.01)
+#> [1] "Your input for lb is too small for this function"
+lb_to_kg(10)
+#> [1] 4.54
+lb_to_kg("hi")
+#> [1] "This function only works for numeric input."
+```
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub.
+\`\`\`

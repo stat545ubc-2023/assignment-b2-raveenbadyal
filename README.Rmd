@@ -2,7 +2,6 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -18,18 +17,18 @@ knitr::opts_chunk$set(
 
 The goal of Assignment 2 - rbpack is to create a package of functions.
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
+The rbpack was created by Raveen Badyal for STAT545B Assignment 2. It is a package that includes an lb_to_kg function. To use this function, you can install and load the package using the install.packages() and library() functions.
+```{r}
+library(rbpack)
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
+The lb_to_kg function can be used to convert pounds to kilograms to 2 decimal
+places. A numeric input is required for the lb_to_kg function. Numbers less than 0.02 can not be inputted into this function as the outut is limited to two decimal places. A different function must be used for that purpose, or divide by 2.20462. There are some examples below. Error messages will be outputted if an invalid input is made.
 
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+```{r}
+lb_to_kg(0.02)
+lb_to_kg(0.01)
+lb_to_kg(10)
+lb_to_kg("hi")
 ```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub.
+```
